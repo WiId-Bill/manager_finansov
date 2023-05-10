@@ -42,12 +42,12 @@ public class Statistics {
 
     public Object max() {
         Map<String, MaxCategory> request = new HashMap<>();
-        MaxCategory maxCategory = (MaxCategory) CategotyTotalSum();
+        MaxCategory maxCategory = (MaxCategory) categotyTotalSum();
         request.put("maxCategory", maxCategory);
         return request;
     }
 
-    public Object CategotyTotalSum() {
+    public  Object categotyTotalSum() {
 
         String name = getTitle();
         int sum = getSum();
@@ -100,6 +100,7 @@ public class Statistics {
         return "title: " + title + " date: " + date + " sum: " + sum;
 
     }
+
 
 
 }
