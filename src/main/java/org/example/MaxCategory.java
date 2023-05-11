@@ -31,4 +31,6 @@ public class MaxCategory {
         return "title: " + category + " sum: " + sum;
 
     }
+
+
 }
